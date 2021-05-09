@@ -13,6 +13,14 @@
 		9108FD8226471CF9003C9F4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9108FD6D26471CF8003C9F4C /* ContentView.swift */; };
 		9108FD8326471CF9003C9F4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9108FD6E26471CF9003C9F4C /* Assets.xcassets */; };
 		9108FD8426471CF9003C9F4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9108FD6E26471CF9003C9F4C /* Assets.xcassets */; };
+		9108FD9726478771003C9F4C /* SearchFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9108FD9626478771003C9F4C /* SearchFetcher.swift */; };
+		9108FD9826478771003C9F4C /* SearchFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9108FD9626478771003C9F4C /* SearchFetcher.swift */; };
+		9108FD9C264787AE003C9F4C /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9108FD9B264787AE003C9F4C /* SearchModel.swift */; };
+		9108FD9D264787AE003C9F4C /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9108FD9B264787AE003C9F4C /* SearchModel.swift */; };
+		91946014264795AB00CAC7DA /* SongPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91946013264795AB00CAC7DA /* SongPlayer.swift */; };
+		91946015264795AB00CAC7DA /* SongPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91946013264795AB00CAC7DA /* SongPlayer.swift */; };
+		9194601926479B6A00CAC7DA /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9194601826479B6A00CAC7DA /* PlayerModel.swift */; };
+		9194601A26479B6A00CAC7DA /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9194601826479B6A00CAC7DA /* PlayerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,10 @@
 		9108FD7B26471CF9003C9F4C /* Ditto Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ditto Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9108FD7D26471CF9003C9F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9108FD7E26471CF9003C9F4C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9108FD9626478771003C9F4C /* SearchFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFetcher.swift; sourceTree = "<group>"; };
+		9108FD9B264787AE003C9F4C /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		91946013264795AB00CAC7DA /* SongPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayer.swift; sourceTree = "<group>"; };
+		9194601826479B6A00CAC7DA /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,10 @@
 				9108FD6C26471CF8003C9F4C /* Ditto_MusicApp.swift */,
 				9108FD6D26471CF8003C9F4C /* ContentView.swift */,
 				9108FD6E26471CF9003C9F4C /* Assets.xcassets */,
+				9108FD9626478771003C9F4C /* SearchFetcher.swift */,
+				9108FD9B264787AE003C9F4C /* SearchModel.swift */,
+				91946013264795AB00CAC7DA /* SongPlayer.swift */,
+				9194601826479B6A00CAC7DA /* PlayerModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -187,8 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9194601926479B6A00CAC7DA /* PlayerModel.swift in Sources */,
 				9108FD8126471CF9003C9F4C /* ContentView.swift in Sources */,
+				9108FD9726478771003C9F4C /* SearchFetcher.swift in Sources */,
 				9108FD7F26471CF9003C9F4C /* Ditto_MusicApp.swift in Sources */,
+				91946014264795AB00CAC7DA /* SongPlayer.swift in Sources */,
+				9108FD9C264787AE003C9F4C /* SearchModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +216,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9194601A26479B6A00CAC7DA /* PlayerModel.swift in Sources */,
 				9108FD8226471CF9003C9F4C /* ContentView.swift in Sources */,
+				9108FD9826478771003C9F4C /* SearchFetcher.swift in Sources */,
 				9108FD8026471CF9003C9F4C /* Ditto_MusicApp.swift in Sources */,
+				91946015264795AB00CAC7DA /* SongPlayer.swift in Sources */,
+				9108FD9D264787AE003C9F4C /* SearchModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
