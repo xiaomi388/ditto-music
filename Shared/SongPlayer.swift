@@ -17,6 +17,9 @@ class SongPlayer : ObservableObject {
     init() {
         player = AVQueuePlayer()
         songQueue = [SongItem]()
+        #if os(iOS)
+        _ = try? AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: .default, options: .mixWithOthers)
+        #endif
         player.addPeriodicTimeObserver(forInterval: CMTime(seconds: 0.5, preferredTimescale: 600), queue: nil) { time in
             guard let item = self.player.currentItem else {
               return

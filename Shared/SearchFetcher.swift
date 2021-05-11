@@ -10,6 +10,8 @@ import Foundation
 class SearchFetcher : ObservableObject {
     @Published private(set) var fetchedSongs = [Song]()
     
+    private(set) var lastSearchKeyword = ""
+    
     func fetchSongsOf(keyword: String) {
         var urlComps = URLComponents(string: "https://vms.n.xiaomi388.com:10443/v1/metadata/songs")!
         urlComps.queryItems = [URLQueryItem(name: "q", value: keyword)]
@@ -30,6 +32,7 @@ class SearchFetcher : ObservableObject {
                     print("Invalid response from server")
                 }
             }.resume()
+            lastSearchKeyword = keyword
         }
     }
 }

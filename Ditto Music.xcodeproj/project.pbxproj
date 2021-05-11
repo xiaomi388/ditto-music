@@ -17,6 +17,8 @@
 		9108FD9826478771003C9F4C /* SearchFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9108FD9626478771003C9F4C /* SearchFetcher.swift */; };
 		9108FD9C264787AE003C9F4C /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9108FD9B264787AE003C9F4C /* SearchModel.swift */; };
 		9108FD9D264787AE003C9F4C /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9108FD9B264787AE003C9F4C /* SearchModel.swift */; };
+		9120A78F264844370056328F /* iosContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9120A78E264844370056328F /* iosContentView.swift */; };
+		9120A793264845CD0056328F /* macContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9120A792264845CD0056328F /* macContentView.swift */; };
 		91946014264795AB00CAC7DA /* SongPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91946013264795AB00CAC7DA /* SongPlayer.swift */; };
 		91946015264795AB00CAC7DA /* SongPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91946013264795AB00CAC7DA /* SongPlayer.swift */; };
 		9194601926479B6A00CAC7DA /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9194601826479B6A00CAC7DA /* PlayerModel.swift */; };
@@ -34,6 +36,8 @@
 		9108FD7E26471CF9003C9F4C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		9108FD9626478771003C9F4C /* SearchFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFetcher.swift; sourceTree = "<group>"; };
 		9108FD9B264787AE003C9F4C /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		9120A78E264844370056328F /* iosContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosContentView.swift; sourceTree = "<group>"; };
+		9120A792264845CD0056328F /* macContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macContentView.swift; sourceTree = "<group>"; };
 		91946013264795AB00CAC7DA /* SongPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayer.swift; sourceTree = "<group>"; };
 		9194601826479B6A00CAC7DA /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				9108FD7626471CF9003C9F4C /* Info.plist */,
+				9120A78E264844370056328F /* iosContentView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			children = (
 				9108FD7D26471CF9003C9F4C /* Info.plist */,
 				9108FD7E26471CF9003C9F4C /* macOS.entitlements */,
+				9120A792264845CD0056328F /* macContentView.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -150,7 +156,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					9108FD7226471CF9003C9F4C = {
 						CreatedOnToolsVersion = 12.2;
@@ -205,6 +211,7 @@
 			files = (
 				9194601926479B6A00CAC7DA /* PlayerModel.swift in Sources */,
 				9108FD8126471CF9003C9F4C /* ContentView.swift in Sources */,
+				9120A78F264844370056328F /* iosContentView.swift in Sources */,
 				9108FD9726478771003C9F4C /* SearchFetcher.swift in Sources */,
 				9108FD7F26471CF9003C9F4C /* Ditto_MusicApp.swift in Sources */,
 				91946014264795AB00CAC7DA /* SongPlayer.swift in Sources */,
@@ -218,6 +225,7 @@
 			files = (
 				9194601A26479B6A00CAC7DA /* PlayerModel.swift in Sources */,
 				9108FD8226471CF9003C9F4C /* ContentView.swift in Sources */,
+				9120A793264845CD0056328F /* macContentView.swift in Sources */,
 				9108FD9826478771003C9F4C /* SearchFetcher.swift in Sources */,
 				9108FD8026471CF9003C9F4C /* Ditto_MusicApp.swift in Sources */,
 				91946015264795AB00CAC7DA /* SongPlayer.swift in Sources */,
@@ -390,6 +398,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3ATXS3UZKJ;
@@ -414,6 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3ATXS3UZKJ;
